@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: source Sans Pro, sans-serif;
+    color: #0000008c;
+    margin: 0;
+    padding: 0;
+}
+nav a{
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 15px;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid #0d6e71;
+}
+.links-topo a{
+    color: #fff;
+}
+nav a:hover{
+    color:rgb(37, 37, 129);
+}
+.especialidade{
+    text-align: center;
+    padding: 20px;
+}
+
+.conteiner-topo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    padding: 8px;
+}
+.tabela{
+    text-align: center;
+    display: flex;
+    height: 240px;
+    padding: 0 20px;
+}
+.tabela img{
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+}
+.tabela-especialistas{
+    text-align: left;
+    width: 70%;
+    height: 100%;
+}
+thead{
+    background-color: #0d6e71;
+    padding: 5px;
+    color: #fff;
+}
+tbody tr:nth-of-type(2n+1){
+    background-color: #cdcdcd;
+    border: 1px solid #f1f1f1;
+}
+@media (max-width:768px){
+    .tabela img{
+    display: none;}
+    .tabela{justify-content: center;
+    height: auto;
+    width: 100%;}
+}
+@media (max-width:425px){
+    .tabela{width: 100%;}
+}
